@@ -27,6 +27,10 @@ a:hover {
   transition: all 200ms ease-out;
 }
 
+.pale-teal {
+  color: #92b4ac;
+}
+
 p {
   color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -127,6 +131,14 @@ footer nav {
   width: 0;
 }
 
+.bouton.vert::before {
+  background: url("../images/pointe-lien-vert.svg") left center no-repeat;
+}
+
+.bouton.vert::after {
+  background: #92b4ac;
+}
+
 header nav {
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
@@ -220,6 +232,8 @@ header nav a:hover {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     margin: auto;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .cercle p {
   font-size: 13px;
@@ -236,6 +250,21 @@ header nav a:hover {
 }
 .cercle-bg img{
 
+}
+
+.besoin {
+  color: #FFF;
+  margin: auto;
+}
+
+.besoin span {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.besoin-2 {
+  font-family: "Lora", serif;
 }
 
 

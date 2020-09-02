@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
+  "name": "gatsby-patteblanche",
   "description": "PatteBlanche 2020 - Gatsby starter styled with Tailwind",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "brunimaro <bruno@patte-blanche.com>",
   "dependencies": {
     "@animated-burgers/burger-slip": "^1.1.2",
     "classnames": "^2.2.6",
@@ -65,5 +65,7 @@
   "bugs": {
     "url": "https://github.com/brunimaro/gatsby-patteblanche/issues"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

@@ -60,15 +60,28 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="md:flex cercle">
             <div className="md:w-1/5 p-2 text-center flex flex-col">
-              <h3>Comprendre</h3>
-              <h3>recommencer</h3>
-              <h3>Essaimer</h3>
+
+              <div className="besoin besoin-1 text-right">
+                <h3 className="pale-teal">Comprendre</h3>
+                <span className="uppercase">Aujourd'hui pour <br/> inventer demain</span>
+              </div>
+
+              <div className="besoin besoin-2 text-right">
+                <h3>recommencer</h3>
+                <span>Aujourd'hui est déjà hier</span>
+              </div>
+
+              <div className="besoin besoin-3 text-right">
+                <h3>Essaimer</h3>
+                <span className="uppercase">Inspirer lorem<br/>lorem lipsum</span>
+              </div>
+
             </div>
             <div className="md:w-3/5 p-8 central flex">
             <div className="contenu-cercle">
               <p className="text-center">Notre modèle de société est en pleine évolution. Afin de s’adapter à ces changements, il est fondamental de bien appréhender les défis écologiques & sociétaux qui se présentent à nous  afin de les intégrer et agir en fonction. Cette étape est fondatrice d’un nouvel élan pour se projeter en conscience dans ces nouveaux paradigmes de société.</p>
               <AniLink
-                className="bouton"
+                className="bouton vert"
                 cover
                 bg="#fde2cd"
                 key="Découvrir l'offre"
@@ -82,9 +95,22 @@ const IndexPage = ({ data }) => (
               </figure>
             </div>
             <div className="md:w-1/5 p-2 text-center  flex flex-col">
-              <h3>Imaginer<br/>et raconter</h3>
-              <h3>Faire</h3>
-              <h3>Transformer</h3>
+
+              <div className="besoin besoin-4 text-left">
+                <h3>Imaginer<br/>et raconter</h3>
+                <span className="uppercase">L'entreprise<br/>ou la marque</span>
+              </div>
+
+              <div className="besoin besoin-5 text-left">
+                <h3>Faire</h3>
+                <span className="uppercase">sa (r)évolution<br/>culturelle</span>
+              </div>
+
+              <div className="besoin besoin-6 text-left">
+                <h3>Transformer</h3>
+                <span className="uppercase">ses convictions<br/>en actions</span>
+              </div>
+
             </div>
           </div>
       </section>
