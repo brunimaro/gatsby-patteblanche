@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => (
         </div>
       </section>
 
-      <section>
+      <section id="agence">
         <div className="md:flex">
           <div className="md:w-1/2">
           <Img
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => (
 
       </section>
 
-      <section className="mb-20">
+      <section id="besoins" className="mb-20">
         <div className="md:flex mb-10">
           <div className="m-auto text-center">
             <h2>vos besoins</h2>
@@ -115,7 +115,7 @@ const IndexPage = ({ data }) => (
           </div>
       </section>
 
-      <section className="mb-20">
+      <section id="realisations" className="mb-20">
         <div className="md:flex">
           <div className="m-auto text-center">
             <h2>Quelques réalisations</h2>
@@ -123,7 +123,7 @@ const IndexPage = ({ data }) => (
         </div>
       </section>
 
-      <section className="mb-20">
+      <section id="engagements" className="mb-20">
 
         <div className="md:flex">
           <div className="m-auto text-center">
@@ -160,6 +160,71 @@ const IndexPage = ({ data }) => (
 
       </section>
 
+
+      <section id="faire-ensemble">
+
+        <div className="md:flex mt-10 mb-10">
+          <div className="m-auto text-center">
+            <h2>Faire ensemble</h2>
+          </div>
+        </div>
+
+        <div className="md:flex">
+          <div className="md:w-1/2">
+          <Img
+            fluid={data.main.childImageSharp.fluid}
+          />
+          </div>
+          <div className="md:w-1/2 p-8">
+          <p>Ensemble on va plus loin… Et aussi, on crée plus, on apprend plus, on évolue plus;...
+Cette croyance s'est traduite au fil du temps en  expérience et en conviction pour PatteBlanche. Définition de la stratégie avec un “conseil des sages”, gouvernance partagée avec l’équipe, travail en “hub”  avec amis et partenaires, implication dans des communautés d’action, rapprochement des mondes (ONG, entreprises, Citoyens, Territoires),.. l’expression du “faire ensemble” se traduit dans toutes les actions de PatteBlanche.</p>
+          <p><strong>Aussi parce que nous sommes convaincus que le Monde de Demain ne pourra exister que par la collaboration, l’échange et le partage, pour le plus grand nombre.</strong></p>
+          <AniLink
+            className="bouton"
+            cover
+            bg="#fde2cd"
+            key="Découvrir"
+            to="/agence"
+          >
+            Découvrir
+          </AniLink>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section id="acteurs">
+
+        <div className="md:flex mt-10 mb-10">
+          <div className="m-auto text-center">
+            <div className="gros-blanc">soyez</div>
+            <div className="gros-bleu">acteur</div>
+          </div>
+        </div>
+
+        <div className="md:flex">
+          <div className="md:w-3/5">
+            <p>Vous souhaitez collaborer avec nous, rejoindre l'équipe ou simplement nous écrire un mot</p>
+          </div>
+          <div className="md:w-2/5 text-center">
+            <AniLink
+              className="bouton"
+              cover
+              bg="#fde2cd"
+              key="Contactez-nous"
+              to="/contact"
+            >
+              Contactez-nous
+            </AniLink>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
     </Layout>
 );
 
@@ -181,6 +246,13 @@ export const query = graphql`
     bateau: file(relativePath: { eq: "illus-bateau.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 450, maxHeight: 750) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    main: file(relativePath: { eq: "ricardo-gomez-angel-d-9-k-on-c-1-a-hw-unsplash.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
           ...GatsbyImageSharpFluid
         }
       }
