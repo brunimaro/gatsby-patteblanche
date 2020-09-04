@@ -2,7 +2,7 @@ const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
 
 const fullConfig = resolveConfig(tailwindConfig);
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -44,24 +44,24 @@ module.exports = {
         fonts: [
           {
             family: `Lora`,
-            variants: [`400`, `500`, `600`, `700`]
+            variants: [`400`, `500`, `600`, `700`],
           },
           {
             family: `Poppins`,
-            variants: [`300`,`400`, `500`, `600`, `700`]
+            variants: [`300`, `400`, `500`, `600`, `700`],
           },
         ],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
+        name: "images",
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-plugin-transition-link`
+    `gatsby-plugin-transition-link`,
   ],
 };

@@ -2,11 +2,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 
 // React Component
-import Burger from '@animated-burgers/burger-slip'
+import Burger from "@animated-burgers/burger-slip";
 // don't forget the styles
-import '@animated-burgers/burger-slip/dist/styles.css'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+import "@animated-burgers/burger-slip/dist/styles.css";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 function Header() {
   const [isOpen, toggleBurger] = useState(true);
@@ -23,23 +22,12 @@ function Header() {
   return (
     <header className="dark">
       <div className="flex flex-wrap items-center justify-between max-w-6xl p-4 mx-auto md:p-8">
-        <AniLink
-          cover
-          bg="#fde2cd"
-          key="Agence PatteBlanche"
-          to="/"
-        >
+        <AniLink cover bg="#fde2cd" key="Agence PatteBlanche" to="/">
           <h1 className="flex items-center nom-site no-underline">
-            <span className="name-branding">
-              {site.siteMetadata.title}
-            </span>
+            <span className="name-branding">{site.siteMetadata.title}</span>
           </h1>
         </AniLink>
-        <nav
-          className={`${
-            isOpen ? `cache` : `actif`
-          }`}
-        >
+        <nav className={`${isOpen ? `cache` : `actif`}`}>
           {[
             {
               route: `/`,
@@ -78,10 +66,9 @@ function Header() {
           ))}
         </nav>
         <Burger
-          className={`${
-            isOpen ? false : 'open'
-          }`}
-          onClick={() => toggleBurger(!isOpen)} />
+          className={`${isOpen ? false : "open"}`}
+          onClick={() => toggleBurger(!isOpen)}
+        />
       </div>
     </header>
   );

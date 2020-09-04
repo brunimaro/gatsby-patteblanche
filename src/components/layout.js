@@ -26,9 +26,7 @@ function Layout({ children }) {
             </a>
           </p>
 
-          <p className="text-white text-xs">
-              © 2020 PatteBlanche
-          </p>
+          <p className="text-white text-xs">© 2020 PatteBlanche</p>
         </nav>
       </footer>
     </div>
