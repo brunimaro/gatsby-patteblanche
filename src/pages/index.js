@@ -246,7 +246,7 @@ const IndexPage = ({ data }) => (
       </div>
     </section>
 
-    <section id="acteurs">
+    <section id="acteurs" className="max-w-3xl m-auto">
       <div className="md:flex mt-10 mb-10">
         <div className="m-auto text-center">
           <div className="gros-blanc">soyez</div>

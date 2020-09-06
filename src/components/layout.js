@@ -13,7 +13,7 @@ function Layout({ children }) {
       </main>
 
       <footer className="">
-        <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
+        <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white uppercase">
             {` `}
             <a
