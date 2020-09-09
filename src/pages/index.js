@@ -145,11 +145,120 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section id="realisations" className="mb-20">
+
       <div className="md:flex">
         <div className="m-auto text-center">
           <h2>Quelques réalisations</h2>
         </div>
       </div>
+
+      <div className="md:flex mt-20">
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg my-2">
+            <Img fluid={data.ref_fondation.childImageSharp.fluid} />
+            <div className="px-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">Fondation Chanel</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg mt-20">
+            <Img fluid={data.ref_biocoop.childImageSharp.fluid} />
+            <div className="px-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">Biocoop</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+      </div>
+
+
+      <div className="md:flex">
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg my-2 ml-20">
+            <Img fluid={data.ref_sephora.childImageSharp.fluid} />
+            <div className="px-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">Sephora</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg mt-20 ml-20">
+            <Img fluid={data.ref_quietude.childImageSharp.fluid} />
+            <div className="pl-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">quiétude attitude</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+      </div>
+
+
+
+      <div className="md:flex">
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg my-2">
+            <Img fluid={data.ref_pf.childImageSharp.fluid} />
+            <div className="px-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">Pierre Fabre</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+        <div className="md:w-1/2">
+            <div className="max-w-xs overflow-hidden shadow-lg mt-20">
+            <Img fluid={data.ref_co2solidaire.childImageSharp.fluid} />
+            <div className="px-0 py-4">
+              <div className="font-bold text-sm uppercase mb-2 tracking-wider">CO2 solidaire</div>
+              <p className="text-sm my-0">
+              Le monde change et évolue de plus en plus vite, se confrontant à ses limites et aux excès.
+              </p>
+            </div>
+            <div className="px-0">
+              <span className="inline-block font-lora px-0 py-1 text-sm font-semibold text-white text-opacity-50 mr-2">\\ Site web - Illustration</span>
+            </div>
+            </div>
+        </div>
+
+      </div>
+
+
+
     </section>
 
     <section id="engagements" className="mb-20">
@@ -302,6 +411,48 @@ export const query = graphql`
     main: file(
       relativePath: { eq: "ricardo-gomez-angel-d-9-k-on-c-1-a-hw-unsplash.jpg" }
     ) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_fondation: file(relativePath: { eq: "ref-fondation.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_biocoop: file(relativePath: { eq: "ref-uniscite.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_sephora: file(relativePath: { eq: "ref-sephora.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_quietude: file(relativePath: { eq: "ref-quietudeattitude.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_pf: file(relativePath: { eq: "ref-pf.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 450, maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ref_co2solidaire: file(relativePath: { eq: "ref-co2solidaire.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 450, maxHeight: 550) {
           ...GatsbyImageSharpFluid

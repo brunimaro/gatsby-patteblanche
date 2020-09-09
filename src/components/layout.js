@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Header from "./header";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 function Layout({ children }) {
   return (
@@ -25,7 +26,15 @@ function Layout({ children }) {
               PatteBlanche
             </a>
           </p>
-
+          <AniLink
+            className="text-white text-xs"
+            cover
+            bg="#fde2cd"
+            key="Mentions légales"
+            to="/mentions-legales"
+          >
+            Mentions légales
+          </AniLink>
           <p className="text-white text-xs">© 2020 PatteBlanche</p>
         </nav>
       </footer>

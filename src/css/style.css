@@ -10,6 +10,13 @@ body {
   color: #fff;
   font-size: 16px;
 }
+
+.font-lora {
+  font-family: "Lora", serif;
+}
+* {
+  color : #FFF;
+}
 blockquote,
 cite {
   color: #fff;
