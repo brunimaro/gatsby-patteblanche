@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
       keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       title="PatteBlanche, Accompagner les organisations vers une (r)évolution culturelle du monde qui vient"
     />
-    <section className="mb-20">
+    <section className="mb-20 pb_reveal">
       <div className="md:flex">
         <div className="m-auto text-center">
           <h1>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section id="agence">
-      <div className="md:flex">
+      <div className="md:flex pb_reveal">
         <div className="md:w-1/2">
           <Img fluid={data.nuage.childImageSharp.fluid} />
         </div>
@@ -56,7 +56,7 @@ const IndexPage = ({ data }) => (
       <div className="mot text-center animate-pulse">(r)évolution</div>
     </section>
 
-    <section id="besoins" className="mb-20">
+    <section id="besoins" className="mb-20 pb_reveal">
       <div className="md:flex mb-10">
         <div className="m-auto text-center">
           <h2>vos besoins</h2>

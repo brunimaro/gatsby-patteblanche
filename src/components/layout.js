@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import { Link } from "gatsby";
 import Header from "./header";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+
+//import gsap from 'gsap';
 
 function Layout({ children }) {
   return (
@@ -14,6 +17,28 @@ function Layout({ children }) {
       </main>
 
       <footer className="">
+
+      <div className="md:flex justify-between max-w-5xl p-4 mx-auto">
+        <div className="md:w-3/8">
+          <strong>Restons connectés</strong>
+          <div className="rs-footer">
+           <Link to="#">Facebook</Link>
+           <Link to="#">Instagram</Link>
+           <Link to="#">Twitter</Link>
+           </div>
+        </div>
+        <div className="md:w-3/8">
+          <strong>Se voir en vrai</strong>
+          <p>
+          The Island - 19 Av de Toulouse<br/>
+          34070 Montpellier
+          </p>
+        </div>
+        <div className="md:w-2/8">
+          <strong>Newsletter</strong>
+        </div>
+      </div>
+
         <nav className="flex justify-between max-w-5xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white uppercase">
             {` `}
