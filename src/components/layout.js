@@ -18,7 +18,7 @@ function Layout({ children }) {
 
       <footer className="">
 
-      <div className="md:flex justify-between max-w-5xl p-4 mx-auto">
+      <div className="md:flex justify-between max-w-5xl p-4 mx-auto text-xs infos">
         <div className="md:w-3/8">
           <strong>Restons connectés</strong>
           <div className="rs-footer">
@@ -51,8 +51,10 @@ function Layout({ children }) {
               PatteBlanche
             </a>
           </p>
+
+          <p className="text-white text-xs">
           <AniLink
-            className="text-white text-xs"
+            className="text-white text-xs mr-2"
             cover
             bg="#fde2cd"
             key="Mentions légales"
@@ -60,7 +62,8 @@ function Layout({ children }) {
           >
             Mentions légales
           </AniLink>
-          <p className="text-white text-xs">© 2020 PatteBlanche</p>
+           © 2020 PatteBlanche
+          </p>
         </nav>
       </footer>
     </div>

@@ -91,15 +91,50 @@ h2 {
   letter-spacing: 4px;
 }
 
-footer nav, footer {
+footer nav, footer .infos{
   border-top: 2px solid #fff;
 }
 footer strong {
   font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
 }
 .nom-site-footer {
   letter-spacing: 4px;
   font-size: 10px;
+}
+.rs-footer {
+  justify-content: space-between;
+}
+
+.rs-footer a {
+  padding: 1rem 0;
+  margin-right: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.rs-footer a::after {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  content: " ";
+  display: block;
+  height: 2px;
+  background: #9db5c3;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.rs-footer a:hover::after {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  width: 0;
 }
 
 .mot {
