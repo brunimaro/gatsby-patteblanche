@@ -375,6 +375,116 @@ header nav a:hover {
   z-index: 0;
 }
 
+/* TIMELINE css */
+
+.timeline {
+  position: relative;
+  margin: 0;
+  font-family: "Droid Sans", sans-serif;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1px;
+  background: rgba(255,255,255,0.2);
+}
+.timeline .entries {
+  width: calc(100% - 80px);
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  left: -5px;
+}
+.timeline .entries .entry {
+  width: calc(60% - 90px);
+  float: left;
+  padding: 20px;
+  clear: both;
+  text-align: right;
+}
+.timeline .entries .entry:not(:first-child) {
+  margin-top: -38px;
+}
+.timeline .entries .entry .title {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 12px;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.timeline .entries .entry .title:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 6px solid #000;
+  background-color: #9db5c3;
+  border-radius: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -46px;
+  z-index: 1000;
+}
+.timeline .entries .entry .title.big:before {
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translate(8px, -50%);
+          transform: translate(8px, -50%);
+}
+.timeline .entries .entry .body {
+  color: #aaa;
+}
+.timeline .entries .entry .body p {
+  font-size: 0.8rem;
+  line-height: 1.4em;
+}
+.timeline .entries .entry:nth-child(2n) {
+  text-align: left;
+  float: right;
+}
+.timeline .entries .entry:nth-child(2n) .title:before {
+  left: -36px;
+}
+.timeline .entries .entry:nth-child(2n) .title.big:before {
+  -webkit-transform: translate(-8px, -50%);
+          transform: translate(-8px, -50%);
+}
+
+/* Fin TIMELINE css */
+
+h3.bleu {
+  font-family: "Poppins", sans-serif;
+  color: #526d72;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  padding: 3rem 2rem;
+}
+
+.membre img {
+  border: 1px solid #78969c;
+}
+
+.membre .nom {
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.membre .fonction {
+  font-size: 0.9rem;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;

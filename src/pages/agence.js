@@ -16,7 +16,7 @@ const AgencePage = ({ data }) => (
     <section className="mb-20">
       <div className="flex">
         <div className="m-auto text-center">
-          <h1>L’agence</h1>
+          <h1>notre histoire</h1>
         </div>
       </div>
     </section>
@@ -24,32 +24,179 @@ const AgencePage = ({ data }) => (
     <section className="mb-20">
       <div className="flex">
         <div className="w-1/2">
-          <Img fluid={data.nuage.childImageSharp.fluid} />
+          <Img fluid={data.livre.childImageSharp.fluid} />
         </div>
         <div className="w-1/2 p-8">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <p>Faisant face en conscience aux maux de notre époque, nous avons décidé d'agir, à notre échelle, là où nous sommes:</p>
+          <p>Depuis 13 ans, nous oeuvrons aux côtés de celles et ceux qui veulent faire mieux et qui se veulent utiles, partout où ils peuvent.</p>
+          <p>Nouveaux Récits. Expériences. Valorisation. Informations.</p>
+          <p>Nous accompagnons ceux qui dessinent le monde qui vient.</p>
+          <p>Depuis 13 ans, c'est la sagesse collective qui guide nos pas : Evolution continue. Gouvernance partagée.<br/>
+          Collaborations croisées.<br/>
+          Chaque jour apprendre, se tromper, hybrider.</p>
+        </div>
+      </div>
+      <div className="mot text-center animate-pulse">exploration</div>
+    </section>
+
+    <section className="mb-20">
+
+      <div className="flex">
+        <div className="m-auto text-center pb-10">
+          <h2>... en quelques étapes ...</h2>
+        </div>
+      </div>
+
+      <div className="flex timeline">
+        <div className="entries">
+          <div className="entry">
+            <div className="title">2007</div>
+            <div className="body">
+              <p>Création de PatteBlanche, claim: "Marquez les esprits, pas la planète"</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2009</div>
+            <div className="body">
+              <p>Lancement d'une offre dédiée à la préservation de la biodiversité avec ingénierie écologique et communication responsable</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2014</div>
+            <div className="body">
+              <p>Début du projet "d'entreprise libérée"</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2015</div>
+            <div className="body">
+              <p>Début de l'aventure de création d'un tiers lieu, The Island, où sont aujourd'hui hébergés nos bureaux</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2016</div>
+            <div className="body">
+              <p>Co-lancement de Konenga, plateforme dédiée au partage et "recyclage" de campagnes de communication</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2017</div>
+            <div className="body">
+              <p>PatteBlanche devient BCorp</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2018</div>
+            <div className="body">
+              <p>PatteBlanche est Best For The World Workers pour la première fois</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2019</div>
+            <div className="body">
+              <p>Accompagnement de l'méergence du mouvement citoyen "La Bascule"</p>
+            </div>
+          </div>
+          <div className="entry">
+            <div className="title">2019</div>
+            <div className="body">
+              <p>Passage en gouvernance partagée</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section className="mb-20">
+      <div className="flex">
+        <div className="m-auto text-center pb-10">
+          <h2>une agence engagée</h2>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="w-1/2 p-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel lacus ac ipsum vestibulum consequat. Suspendisse auctor feugiat tellus, vel tempus orci laoreet non. In hac habitasse platea dictumst. Curabitur a sem nec ex sollicitudin fringilla ac eget est. Etiam tortor neque, accumsan sit amet ex eu, euismod imperdiet tortor. Curabitur sit amet rhoncus dolor, ac suscipit est. Curabitur pharetra sollicitudin nisi. Praesent vel efficitur mauris. Etiam iaculis libero sit amet egestas molestie. Phasellus ac luctus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Donec ornare sapien est, vel pellentesque mi ultrices eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce non mollis dolor. Praesent eu erat ex. Sed feugiat vestibulum tellus nec pulvinar. Etiam rutrum et est a facilisis. Duis quis lorem turpis.</p>
           <AniLink
             className="bouton"
             cover
             bg="#fde2cd"
-            key="Découvrir l agence"
-            to="/agence"
+            key="Découvrir nos engagements"
+            to="/engagements"
           >
-            Découvrir l Agence
+            Découvrir nos engagements
           </AniLink>
         </div>
+        <div className="w-1/2">
+          <Img fluid={data.poing.childImageSharp.fluid} />
+        </div>
       </div>
+      <div className="mot text-center animate-pulse">confiance</div>
+    </section>
+
+
+    <section className="mb-20">
+
+      <div className="flex">
+        <div className="m-auto text-center">
+          <h2>Ils font PatteBlanche</h2>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="m-auto text-center">
+          <h3 className="bleu">L'équipe</h3>
+        </div>
+      </div>
+      <div className="grid grid-cols-4 gap-4">
+        <div className="p-4 membre">
+          <Img fluid={data.equipe1.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre mt-8">
+          <Img fluid={data.equipe2.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre">
+          <Img fluid={data.equipe3.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre mt-8">
+          <Img fluid={data.equipe4.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre">
+          <Img fluid={data.equipe5.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre mt-8">
+          <Img fluid={data.equipe6.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre">
+          <Img fluid={data.equipe7.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+        <div className="p-4 membre mt-8">
+          <Img fluid={data.equipe8.childImageSharp.fluid} />
+          <div className="nom">Céline Martin</div>
+          <div className="fonction">Web Designeuse</div>
+        </div>
+      </div>
+
     </section>
 
     <section className="mb-20">
       <div className="flex">
         <div className="m-auto text-center">
-          <h2>Notre histoire</h2>
+          <h2>nos bureaux,<br/>réinventer la manière de travailler</h2>
         </div>
       </div>
     </section>
@@ -57,23 +204,7 @@ const AgencePage = ({ data }) => (
     <section className="mb-20">
       <div className="flex">
         <div className="m-auto text-center">
-          <h2>Raison d’être & Manifeste</h2>
-        </div>
-      </div>
-    </section>
-
-    <section className="mb-20">
-      <div className="flex">
-        <div className="m-auto text-center">
-          <h2>Equipe</h2>
-        </div>
-      </div>
-    </section>
-
-    <section className="mb-20">
-      <div className="flex">
-        <div className="m-auto text-center">
-          <h2>Amis & Partenaires</h2>
+          <h2>ils parlent de nous</h2>
         </div>
       </div>
     </section>
@@ -88,9 +219,72 @@ export default AgencePage;
 
 export const query = graphql`
   query {
-    nuage: file(relativePath: { eq: "fond-nuage.jpg" }) {
+    livre: file(relativePath: { eq: "illus-livre.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 650, maxHeight: 650) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    poing: file(relativePath: { eq: "illus-poing.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 650, maxHeight: 650) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe1: file(relativePath: { eq: "equipe-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe2: file(relativePath: { eq: "equipe-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe3: file(relativePath: { eq: "equipe-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe4: file(relativePath: { eq: "equipe-4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe5: file(relativePath: { eq: "equipe-5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe6: file(relativePath: { eq: "equipe-6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe7: file(relativePath: { eq: "equipe-7.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    equipe8: file(relativePath: { eq: "equipe-8.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 238, maxHeight: 226) {
           ...GatsbyImageSharpFluid
         }
       }
