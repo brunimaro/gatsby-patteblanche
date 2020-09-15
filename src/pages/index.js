@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
       keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       title="PatteBlanche, Accompagner les organisations vers une (r)évolution culturelle du monde qui vient"
     />
-    <section className="mb-20 pb_reveal">
+    <section className="mb-20 gsReveal">
       <div className="md:flex">
         <div className="m-auto text-center">
           <h1>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section id="agence">
-      <div className="md:flex pb_reveal">
+      <div className="md:flex gsReveal">
         <div className="md:w-1/2">
           <Img fluid={data.nuage.childImageSharp.fluid} />
         </div>
@@ -56,7 +56,7 @@ const IndexPage = ({ data }) => (
       <div className="mot text-center animate-pulse">(r)évolution</div>
     </section>
 
-    <section id="besoins" className="mb-20 pb_reveal">
+    <section id="besoins" className="mb-20 gsReveal">
       <div className="md:flex mb-10">
         <div className="m-auto text-center">
           <h2>vos besoins</h2>
@@ -154,7 +154,7 @@ const IndexPage = ({ data }) => (
 
       <div className="md:flex mt-20">
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg my-2">
             <Img fluid={data.ref_fondation.childImageSharp.fluid} />
             <div className="px-0 py-4">
@@ -169,7 +169,7 @@ const IndexPage = ({ data }) => (
             </div>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg mt-20">
             <Img fluid={data.ref_biocoop.childImageSharp.fluid} />
             <div className="px-0 py-4">
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => (
 
       <div className="md:flex">
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg my-2 ml-20">
             <Img fluid={data.ref_sephora.childImageSharp.fluid} />
             <div className="px-0 py-4">
@@ -204,7 +204,7 @@ const IndexPage = ({ data }) => (
             </div>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg mt-20 ml-20">
             <Img fluid={data.ref_quietude.childImageSharp.fluid} />
             <div className="pl-0 py-4">
@@ -225,7 +225,7 @@ const IndexPage = ({ data }) => (
 
       <div className="md:flex">
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg my-2">
             <Img fluid={data.ref_pf.childImageSharp.fluid} />
             <div className="px-0 py-4">
@@ -240,7 +240,7 @@ const IndexPage = ({ data }) => (
             </div>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
             <div className="max-w-xs overflow-hidden shadow-lg mt-20">
             <Img fluid={data.ref_co2solidaire.childImageSharp.fluid} />
             <div className="px-0 py-4">
@@ -262,13 +262,13 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section id="engagements" className="mb-20">
-      <div className="md:flex">
+      <div className="md:flex gsReveal">
         <div className="m-auto text-center">
           <h2>Nos engagements</h2>
         </div>
       </div>
 
-      <div className="md:flex mt-20">
+      <div className="md:flex mt-20 gsReveal">
         <div className="md:w-1/2 p-8">
           <p>
             Acteur des transitions depuis 2007, nous n’avons eu de cesse de
@@ -314,17 +314,17 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section id="faire-ensemble">
-      <div className="md:flex mt-10 mb-10">
+      <div className="md:flex mt-10 mb-10 gsReveal">
         <div className="m-auto text-center">
           <h2>Faire ensemble</h2>
         </div>
       </div>
 
       <div className="md:flex">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 gsReveal">
           <Img fluid={data.main.childImageSharp.fluid} />
         </div>
-        <div className="md:w-1/2 p-8">
+        <div className="md:w-1/2 p-8 gsReveal">
           <p>
             Ensemble on va plus loin… Et aussi, on crée plus, on apprend plus,
             on évolue plus;... Cette croyance s'est traduite au fil du temps en
@@ -358,19 +358,19 @@ const IndexPage = ({ data }) => (
     <section id="acteurs" className="max-w-3xl m-auto">
       <div className="md:flex mt-10 mb-10">
         <div className="m-auto text-center">
-          <div className="gros-blanc">soyez</div>
-          <div className="gros-bleu">acteur</div>
+          <div className="gros-blanc gsReveal">soyez</div>
+          <div className="gros-bleu gsReveal">acteur</div>
         </div>
       </div>
 
       <div className="md:flex">
-        <div className="md:w-3/5">
+        <div className="md:w-3/5 gsReveal">
           <p>
             Vous souhaitez collaborer avec nous, rejoindre l'équipe ou
             simplement nous écrire un mot
           </p>
         </div>
-        <div className="md:w-2/5 text-center">
+        <div className="md:w-2/5 text-center gsReveal">
           <AniLink
             className="bouton"
             cover

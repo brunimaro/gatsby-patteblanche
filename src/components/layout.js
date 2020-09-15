@@ -3,11 +3,12 @@ import React from "react";
 import { Link } from "gatsby";
 import Header from "./header";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import { useGsapReveal } from "./useGsapReveal";
 
 //import gsap from 'gsap';
 
 function Layout({ children }) {
+  useGsapReveal();
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
       <Header />
@@ -18,8 +19,8 @@ function Layout({ children }) {
 
       <footer className="">
 
-      <div className="md:flex justify-between max-w-5xl p-4 mx-auto text-xs infos">
-        <div className="md:w-3/8">
+      <div className="max-w-5xl p-4 mx-auto text-sm infos grid grid-cols-8 gap-4">
+        <div className="md:col-span-3">
           <strong>Restons connectés</strong>
           <div className="rs-footer">
            <Link to="#">Facebook</Link>
@@ -27,15 +28,44 @@ function Layout({ children }) {
            <Link to="#">Twitter</Link>
            </div>
         </div>
-        <div className="md:w-3/8">
+        <div className="md:col-span-3">
           <strong>Se voir en vrai</strong>
-          <p>
+          <p className="mb-0">
           The Island - 19 Av de Toulouse<br/>
           34070 Montpellier
           </p>
+          <AniLink
+            className="bouton d-inline-block"
+            cover
+            bg="#fde2cd"
+            key="Itinéraire"
+            to="/"
+          >
+            Itinéraire
+          </AniLink>
+          <AniLink
+            className="bouton d-inline-block"
+            cover
+            bg="#fde2cd"
+            key="Site web du lieu"
+            to="/"
+          >
+            Site web du lieu
+          </AniLink>
         </div>
-        <div className="md:w-2/8">
+        <div className="md:col-span-2">
           <strong>Newsletter</strong>
+          <div>
+          <AniLink
+            className="bouton d-inline-block"
+            cover
+            bg="#fde2cd"
+            key="S'inscrire"
+            to="/"
+          >
+            S'inscrire
+          </AniLink>
+          </div>
         </div>
       </div>
 
@@ -43,7 +73,7 @@ function Layout({ children }) {
           <p className="text-white uppercase">
             {` `}
             <a
-              className="no-underline nom-site-footer"
+              className="no-underline nom-site-footer gsReveal"
               href="https://patte-blanche.com"
               target="_blank"
               rel="noopener noreferrer"
