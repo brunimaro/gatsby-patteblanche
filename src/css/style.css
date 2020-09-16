@@ -95,8 +95,9 @@ footer nav, footer .infos{
   border-top: 2px solid #fff;
 }
 footer strong {
+  font-family: "Poppins";
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   display: inline-flex;
 }
@@ -114,6 +115,7 @@ footer strong {
   display: inline-block;
   text-transform: uppercase;
   color: #FFF;
+  font-weight: 700;
 }
 
 .rs-footer a::after {
@@ -469,11 +471,11 @@ h3.bleu {
   padding: 3rem 2rem;
 }
 
-.membre img {
+.membre img, .bordure img {
   border: 1px solid #78969c;
 }
 
-.membre .nom {
+.membre .nom, .citation .nom {
   text-transform: uppercase;
   margin: 0.5rem 0 0.2rem;
   font-weight: 700;

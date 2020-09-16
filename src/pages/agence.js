@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import Helmet from 'react-helmet';
+//import Helmet from 'react-helmet';
 //import gsap from "gsap";
 //import fondNuage from "../images/fond-nuage.jpg";
 
@@ -219,7 +219,7 @@ const AgencePage = ({ data }) => (
           <div className="fonction">Web Designeuse</div>
         </div>
         <div className="p-4 membre gsReveal mt-8">
-          <Img fluid={data.equipe16.childImageSharp.fluid} />
+          <Img fluid={data.equipe_16.childImageSharp.fluid} />
           <div className="nom">Céline Martin</div>
           <div className="fonction">Web Designeuse</div>
         </div>
@@ -312,17 +312,56 @@ const AgencePage = ({ data }) => (
     </section>
 
     <section className="mb-20">
-      <div className="flex gsReveal">
+      <div className="flex gsReveal pb-20">
         <div className="m-auto text-center">
           <h2>ils parlent de nous</h2>
         </div>
       </div>
-    </section>
-    <Helmet>
-    <script>
 
-    </script>
-    </Helmet>
+      <div className="flex">
+      <div className="w-1/2 gsReveal p-4 citation">
+        <div className="flex mb-8">
+            <div className="w-1/2 bordure"><Img fluid={data.equipe6.childImageSharp.fluid} /></div>
+            <div className="w-1/2 p-8">
+              <div className="nom">Audrey Zéphir</div>
+              <div ClassName="text-sm">alimentation urbaine et collectif de femmes</div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi odio, ultrices rutrum ligula a, porttitor interdum massa. Quisque dui ex, sollicitudin sed nisl ut, semper porttitor turpis. Praesent at scelerisque turpis, sit amet porttitor lacus. Praesent tempus enim nec libero bibendum, at porttitor dolor posuere. Donec hendrerit nisl non dui consectetur tristique. Nullam sit amet venenatis dolor, eu fringilla ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
+      </div>
+        <div className="w-1/2 gsReveal p-4 citation">
+          <div className="flex mb-8">
+              <div className="w-1/2 bordure"><Img fluid={data.equipe8.childImageSharp.fluid} /></div>
+              <div className="w-1/2 p-8">
+                <div className="nom">Audrey Zéphir</div>
+                <div ClassName="text-sm">alimentation urbaine et collectif de femmes</div>
+              </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi odio, ultrices rutrum ligula a, porttitor interdum massa. Quisque dui ex, sollicitudin sed nisl ut, semper porttitor turpis. Praesent at scelerisque turpis, sit amet porttitor lacus. Praesent tempus enim nec libero bibendum, at porttitor dolor posuere. Donec hendrerit nisl non dui consectetur tristique. Nullam sit amet venenatis dolor, eu fringilla ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus</p>
+        </div>
+      </div>
+      <div className="p-4">
+        <AniLink
+          className="bouton d-inline-block"
+          cover
+          bg="#fde2cd"
+          key="Voir plus de témoignages"
+          to="/"
+        >
+          Voir plus de témoignages
+        </AniLink>
+      </div>
+    </section>
+
+    <section id="acteurs" className="max-w-3xl m-auto">
+      <div className="md:flex mt-10 mb-10">
+        <div className="m-auto text-center">
+          <div className="gros-blanc gsReveal">restons</div>
+          <div className="gros-bleu gsReveal">connectés</div>
+        </div>
+      </div>
+    </section>
+
   </Layout>
 );
 
@@ -453,7 +492,7 @@ export const query = graphql`
         }
       }
     },
-    equipe16: file(relativePath: { eq: "equipe-16.jpg" }) {
+    equipe_16: file(relativePath: { eq: "equipe-16.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 238, maxHeight: 226) {
           ...GatsbyImageSharpFluid

@@ -44,7 +44,7 @@ function Layout({ children }) {
             Itinéraire
           </AniLink>
           <AniLink
-            className="bouton d-inline-block"
+            className="bouton d-inline-block ml-4"
             cover
             bg="#fde2cd"
             key="Site web du lieu"
