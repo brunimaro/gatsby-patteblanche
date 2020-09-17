@@ -37,18 +37,18 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `500`, `600`, `700`]
-          },
-        ],
-      },
-    },
+    //`gatsby-plugin-offline`,
+    //{
+    //  resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //  options: {
+    //    fonts: [
+    //      {
+    //        family: `Poppins`,
+    //        variants: [`300`, `400`, `500`, `600`, `700`]
+    //      },
+    //    ],
+    //  },
+    //},
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
