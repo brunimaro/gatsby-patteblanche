@@ -43,10 +43,6 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Lora`,
-            variants: [`400`, `500`, `600`, `700`]
-          },
-          {
             family: `Poppins`,
             variants: [`300`, `400`, `500`, `600`, `700`]
           },
