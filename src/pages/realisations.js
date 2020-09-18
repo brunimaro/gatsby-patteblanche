@@ -10,8 +10,8 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 const RealisationsPage = ({ data }) => (
   <Layout>
     <SEO
-      keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-      title="Réalisations"
+      keywords={[`PatteBlanche`, `agence`, `communication`, `rse`]}
+      title="PatteBlanche - Réalisations"
     />
     <section className="mb-20">
       <div className="md:flex">

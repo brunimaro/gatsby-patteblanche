@@ -490,6 +490,32 @@ h3.bleu {
   font-size: 0.9rem;
 }
 
+.gros-claim h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1.8;
+  color: #9db5c3;
+  letter-spacing: 2px;
+}
+.gros-claim h3 span {
+  color: #fde2cd;
+}
+
+.verte {
+  color: #92b4ac;
+}
+h3.verte {
+  font-family: "Poppins", sans-serif;
+  color: #92b4ac;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  padding: 3rem 2rem;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
@@ -530,5 +556,23 @@ h3.bleu {
   }
   .contenu-cercle {
     width: auto;
+    margin-top: 2rem;
   }
+  .cercle-bg {
+    top: 0;
+  }
+
+  .besoin-1 {
+    margin-right: 0;
+  }
+  .besoin-3 {
+    margin-right: 0;
+  }
+  .besoin-4 {
+    margin-left: 0;
+  }
+  .besoin-6 {
+    margin-left:0;
+  }
+
 }

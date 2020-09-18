@@ -10,7 +10,7 @@ import cercleBesoin from "../images/cercle-besoins.svg";
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO
-      keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+      keywords={[`PatteBlanche`, `agence`, `communication`, `rse`]}
       title="PatteBlanche, Accompagner les organisations vers une (r)évolution culturelle du monde qui vient"
     />
     <section className="mb-20 gsReveal">

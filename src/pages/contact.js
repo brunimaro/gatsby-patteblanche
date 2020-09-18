@@ -7,8 +7,8 @@ function ContactPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
+        keywords={[`PatteBlanche`, `agence`, `communication`, `rse`]}
+        title="PatteBlanche - Contact"
       />
       <section>
         <form className="mx-auto md:w-1/2">

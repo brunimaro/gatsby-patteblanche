@@ -8,8 +8,8 @@ function AboutPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
+        keywords={[`PatteBlanche`, `agence`, `communication`, `rse`]}
+        title="PatteBlanche - A propos"
       />
 
       <section className="flex flex-col items-center md:flex-row">

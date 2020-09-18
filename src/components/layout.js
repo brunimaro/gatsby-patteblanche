@@ -4,11 +4,13 @@ import { Link } from "gatsby";
 import Header from "./header";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { useGsapReveal } from "./useGsapReveal";
+import { animManifeste } from "./animManifeste";
 
 //import gsap from 'gsap';
 
 function Layout({ children }) {
   useGsapReveal();
+  animManifeste();
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
       <Header />

@@ -10,8 +10,8 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 const OffresPage = ({ data }) => (
   <Layout>
     <SEO
-      keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-      title="Nos offres d accompagnements / Vos besoins"
+      keywords={[`PatteBlanche`, `agence`, `communication`, `rse`]}
+      title="PatteBlanche - Nos offres d accompagnements / Vos besoins"
     />
     <section className="mb-20">
       <div className="md:flex">
