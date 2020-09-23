@@ -28,6 +28,7 @@ function Header() {
           </h1>
         </AniLink>
         <nav className={`${isOpen ? `cache` : `actif`}`}>
+        <div className="grille">
           {[
             {
               route: `/`,
@@ -64,6 +65,7 @@ function Header() {
               {link.title}
             </AniLink>
           ))}
+          </div>
         </nav>
         <Burger
           className={`${isOpen ? false : "open"}`}

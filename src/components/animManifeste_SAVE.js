@@ -8,7 +8,7 @@ export const animManifeste = () => {
       gsap.registerPlugin(ScrollTrigger);
       gsap.core.globals("ScrollTrigger", ScrollTrigger);
     }
-    const animateFrom = (elem, direction = 0) => {
+    const animateFrom = (elem, direction = 1) => {
       let x = 0,
         y = direction * 50;
       if (elem.classList.contains("gsRevealFromLeft")) {
@@ -36,7 +36,7 @@ export const animManifeste = () => {
     };
 
     const hide = elem => gsap.set(elem, { autoAlpha: 0 });
-    gsap.utils.toArray(".hop").forEach(elem => {
+    gsap.utils.toArray(".manifeste p").forEach(elem => {
       hide(elem);
       ScrollTrigger.create({
         trigger: elem,

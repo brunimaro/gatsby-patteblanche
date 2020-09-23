@@ -262,15 +262,40 @@ header nav.actif a {
   text-align: center;
   margin: 1rem auto;
   width: 100%;
-  padding: 1rem;
+ padding: 0.5rem 1rem;
   text-transform: uppercase;
   max-width: 450px;
-  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 16px;
+  /*border: 2px solid #fff:*/
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-header nav a:hover {
+header nav.actif a::after {
+  transition: all 200ms ease-out;
+  content: " ";
+  display: block;
+  height: 2px;
+  width: calc(100% + 24px);
+  background: #fde2cd;
+  margin-top: 0.5rem;
+}
+
+header nav.actif a:hover::after {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  width: 0;
+}
+
+
+/*header nav a:hover {
   background: #fff;
   color: #000;
-}
+}*/
 
 .cercle {
   height: 480px;
@@ -515,6 +540,23 @@ h3.verte {
   letter-spacing: 6px;
   padding: 3rem 2rem;
 }
+
+.manifeste {
+
+}
+
+.manifeste p {
+
+}
+
+nav.actif .grille{
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 
 @media screen and (max-width: 768px) {
   h1 {
